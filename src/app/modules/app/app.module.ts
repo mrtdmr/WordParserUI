@@ -1,21 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from '../../components/app/app.component';
-import { LayoutComponent } from '../../components/layout/layout.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { DocumentComponent } from '../../components/document/document.component';
+
+import { RouteModule } from '../route/route.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DocumentComponent
   ],
-  exports: [LayoutComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    RouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
