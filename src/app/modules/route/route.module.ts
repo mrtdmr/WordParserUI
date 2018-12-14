@@ -4,9 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { DocumentComponent } from '../../components/document/document.component';
 
 const routes: Routes = [
-    {
-        path: 'document', component: DocumentComponent
-    }
+    { path: '', component: DocumentComponent },
+    { path: 'document/:process', component: DocumentComponent }
 ];
 
 @NgModule({
